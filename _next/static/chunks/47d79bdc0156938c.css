@@ -56,7 +56,7 @@ html:not(.jb-js) [style*="opacity:0"]{opacity:1!important;transform:none!importa
 .jb-hero-photo{position:relative}
 .jb-draw .jb-hero-photo picture{visibility:hidden}
 .jb-ill{position:absolute;inset:0;pointer-events:none}
-.jb-ill svg{display:block;width:100%;height:100%;overflow:visible}
+.jb-ill svg{display:block;width:100%;height:100%;overflow:hidden}
 .jb-ill .paper path{fill:#fff}
 .jb-ill .ink path{fill:#000}
 .jb-ill .rib path{fill:#5d5d5d}
@@ -65,3 +65,4 @@ html:not(.jb-js) [style*="opacity:0"]{opacity:1!important;transform:none!importa
 .jb-ill .eye{transform:translate(var(--ex,0px),var(--ey,0px)) scaleY(var(--blink,1));transition:transform .18s ease-out}
 .jb-ill .brow{transform:translateY(var(--by,0px));transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
 .dark .jb-ill .draw path{stroke:#fff}
+.dark .jb-ill .paper path{stroke:#fff;stroke-width:22px;stroke-linejoin:round}
