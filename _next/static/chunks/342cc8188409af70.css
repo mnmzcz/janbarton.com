@@ -53,3 +53,15 @@ html:not(.jb-js) [style*="opacity:0"]{opacity:1!important;transform:none!importa
 .jb-foot{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
 .jb-sep{display:none}
 @media (min-width:1024px){.jb-foot{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:.25rem .75rem}.jb-sep{display:inline}}
+.jb-hero-photo{position:relative}
+.jb-draw .jb-hero-photo picture{visibility:hidden}
+.jb-ill{position:absolute;inset:0;pointer-events:none}
+.jb-ill svg{display:block;width:100%;height:100%;overflow:visible}
+.jb-ill .paper path{fill:#fff}
+.jb-ill .ink path{fill:#000}
+.jb-ill .rib path{fill:#5d5d5d}
+.jb-ill .draw path{fill:none;stroke:#000;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+.jb-ill .eye,.jb-ill .brow{transform-box:fill-box;transform-origin:center}
+.jb-ill .eye{transform:translate(var(--ex,0px),var(--ey,0px)) scaleY(var(--blink,1));transition:transform .18s ease-out}
+.jb-ill .brow{transform:translateY(var(--by,0px));transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.dark .jb-ill .draw path{stroke:#fff}
